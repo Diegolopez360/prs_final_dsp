@@ -1,0 +1,55 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.VehiculoEntity>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Vehiculos";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+@if (ViewBag.Message != null)
+{
+    <div class="row my-5">
+        <div class="cell-12">
+            <div class="bg-green fg-white text-upper win-shadow" data-role="panel">@ViewBag.Message</div>
+        </div>
+    </div>
+}
+<div class="d-block mb-5 text-right">
+    <a href="@Url.Action("CreateVehiculo","Admin",new { })" class="button success drop-shadow"><span class="mif-plus icon"></span> AGREGAR</a>
+</div>
+<div class="row my-5">
+    <div class="cell-md-8 search-wrapper"></div>
+    <div class="cell-md-4 rows-wrapper"></div>
+</div>
+<div class="row">
+    <div class="cell-12">
+        <table class="table table-border striped" data-role="table" data-table-info-title="Mostrando $1 de $2 registros" data-search-wrapper=".search-wrapper" data-rows-wrapper=".rows-wrapper">
+            <thead>
+                <tr>
+                    <th>ROWID</th>
+                    <th data-sortable="true">NOMBRE</th>
+                    <th data-sortable="true">MATRICULA</th>
+                    <th data-sortable="true">NUMERO DE PERSONAS</th>
+                    <th data-sortable="true">FECHA DE FABRICACIÓN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vehiculo in Model)
+                {
+                    <tr>
+                        <td>@vehiculo.VehiculoId</td>
+                        <td>@vehiculo.Nombre</td>
+                        <td>@vehiculo.Matricula</td>
+                        <td>@vehiculo.NumeroPersonas</td>
+                        <td>@vehiculo.FechaFabricacion.ToString("dd MMM yyyy")</td>
+                        <td>
+                            <a href="@Url.Action("EditVehiculo","Admin",new { id=vehiculo.VehiculoId})" class="button small success"><span class="mif-pencil icon"></span></a>
+                            <a href="@Url.Action("DeleteVehiculo","Admin",new { id=vehiculo.VehiculoId})" class="button small alert"><span class="mif-bin icon"></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

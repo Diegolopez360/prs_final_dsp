@@ -1,0 +1,47 @@
+﻿@model CaligulasHotel.Models.Entity.RentaVehiculoEntity
+
+@{
+    ViewBag.Title = "Renta Vehículo";
+}
+
+<div class="row">
+    <div class="cell-12">
+        <h1 class="display2 text-upper text-light mt-4">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row flex-align-center h-100">
+    <div class="cell-md-6 text-center">
+        <div class="img-container"><img src="~/Uploads/@Model.Vehiculo.ImageUrl" /></div>
+    </div>
+    <div class="cell-6">
+        <h1 class="display1 text-light text-upper">@Html.DisplayFor(x => x.Vehiculo.Nombre)</h1>
+        <p>@Html.DisplayFor(x => x.Vehiculo.Descripcion)</p>
+        <div class="sub-header text-light text-upper"><span class="mif-dollar2 icon"></span> @Html.DisplayFor(x => x.CostoHora) p/hora</div>
+        <div class="text-upper text-light">max-horas: @Html.DisplayFor(x => x.MaxHoras)</div>
+        <div class="text-upper text-light">min-horas: @Html.DisplayFor(x => x.MinHoras)</div>
+        <hr />
+        @if (Model.Habilitado)
+        {
+            <h2 class="display1 text-upper text-light">alquilar vehículo</h2>
+            using (Html.BeginForm("RentalRegister", "Extreme", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.Hidden("RentaPassId", Model.Id)
+                <div class="form-group">
+                    <label>Número de Horas</label>
+                    @Html.TextBox("NumeroHoras", Model.MinHoras, new { min = Model.MinHoras, max = Model.MaxHoras, type = "number", required = "" })
+                    <small>Presiona las teclas <kbd><span class="mif-arrow-down"></span></kbd> <kbd><span class="mif-arrow-up"></span></kbd> para seleccionar tiempo de alquiler</small>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button small primary">ACEPTAR</button>
+                </div>
+            }
+        }
+        else
+        {
+            <h2 class="header text-center text-light text-upper mt-4">disponible en</h2>
+            <div data-role="countdown" data-hours="@ViewBag.horas" data-minutes="@ViewBag.minutos"></div>
+        }
+    </div>
+</div>
+

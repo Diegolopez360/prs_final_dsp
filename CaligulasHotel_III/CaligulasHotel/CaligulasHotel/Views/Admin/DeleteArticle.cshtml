@@ -1,0 +1,61 @@
+﻿@model CaligulasHotel.Models.Entity.ArticuloEntity
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Eliminar Artículo";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Articulo","Admin",new { })" class="page-link">ARTÍCULOS</a></li>
+            <li class="page-item"><a href="#" class="page-link">ELIMINAR ARTÍCULO</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="panel border bd-red win-shadow" data-role="panel">
+            <h3>¿Esta Seguro de Eliminar el Registro?</h3>
+            <dl>
+                <dt>ROWID</dt>
+                <dd>@Html.DisplayFor(x => x.ArticuloId)</dd>
+                <dt>SKU</dt>
+                <dd>@Html.DisplayFor(x => x.SKU)</dd>
+                <dt>NOMBRE</dt>
+                <dd>@Html.DisplayFor(x => x.Nombre)</dd>
+                <dt>DESCRIPCION</dt>
+                <dd>@Html.DisplayFor(x => x.Descripcion)</dd>
+                <dt>PRECIO UNITARIO</dt>
+                <dd><span class="mif-money icon"></span> @Html.DisplayFor(x => x.PrecioUnitario)</dd>
+                <dt>PRECIO COMPRA</dt>
+                <dd><span class="mif-money icon"></span> @Html.DisplayFor(x => x.PrecioCompra)</dd>
+                <dt>STOCK</dt>
+                <dd>@Html.DisplayFor(x => x.Stock)</dd>
+                <dt>UNIDADES COMPRADAS</dt>
+                <dd>@Html.DisplayFor(x => x.UnidadesCompradas)</dd>
+                <dt>MARCA</dt>
+                <dd>@Html.DisplayFor(x => x.Marca.Nombre)</dd>
+                <dt>CATEGORÍA</dt>
+                <dd>@Html.DisplayFor(x => x.Categoria.Nombre)</dd>
+                <dt>FECHA INGRESO</dt>
+                <dd>@Html.DisplayFor(x => x.FechaCreacion)</dd>
+            </dl>
+        </div>
+        @using (Html.BeginForm("DeleteArticlePost", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.HiddenFor(x => x.ArticuloId)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button alert"><span class="mif-bin icon"></span> ELIMINAR</button>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="image-container text-center">
+            <img src="~/Uploads/@Model.ImageUrl" class="w-50 h-50" />
+        </div>
+    </div>
+</div>

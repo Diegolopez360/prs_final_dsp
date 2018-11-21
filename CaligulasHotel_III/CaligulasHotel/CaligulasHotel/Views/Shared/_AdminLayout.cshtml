@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Administración Caligula's Hotel</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <aside class="sidebar pos-absolute z-2" data-role="sidebar" data-toggle="#sidebar-toggle-4" id="sb4" data-shift=".shifted-content-2" data-static-shift=".shifted-content-2" data-static="md">
+        <div class="sidebar-header" data-image="/Images/dashboard_background.jpg">
+
+        </div>
+        <ul class="sidebar-menu h-100 vertical">
+            <li><a href="@Url.Action("Categoria","Admin",new { })"><span class="mif-menu icon"></span> CATEGORIAS</a></li>
+            <li><a href="@Url.Action("Marca","Admin",new { })"><span class="mif-registered icon"></span> MARCAS</a></li>
+            <li><a href="@Url.Action("Vehiculo","Admin",new { })"><span class="mif-automobile icon"></span> VEHÍCULOS</a></li>
+            <li><a href="@Url.Action("Articulo","Admin",new { })"><span class="mif-gift icon"></span> ARTÍCULOS</a></li>
+            <li><a href="@Url.Action("Habitacion","Admin",new { })"><span class="mif-hotel icon"></span> HABITACIONES</a></li>
+            <li class="divider"></li>
+            <li><a href="@Url.Action("Lease","Admin",new { })"><span class="mif-apps icon"></span> ARRENDAMIENTOS</a></li>
+            <li class="divider"></li>
+            <li><a href="@Url.Action("Index","Home",new { })"><span class="mif-shop icon"></span> IR A LA TIENDA</a></li>
+        </ul>
+    </aside>
+    <div class="shifted-content-2 h-100 p-ab">
+        <div class="appbar pos-absolute bg-crimson fg-white z-1" data-role="appbar">
+            <button class="app-bar-item c-pointer" id="sidebar-toggle-4">
+                <span class="mif-menu fg-white"></span>
+            </button>
+        </div>
+        <div class="h-100 p-4">
+            @RenderBody()
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/metrosrc")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

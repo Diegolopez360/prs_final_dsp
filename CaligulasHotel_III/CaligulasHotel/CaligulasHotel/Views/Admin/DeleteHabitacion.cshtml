@@ -1,0 +1,73 @@
+﻿@model CaligulasHotel.Models.Entity.HabitacionEntity
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Eliminar Habitación";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Habitacion", "Admin", new { })" class="page-link">HABITACIONES</a></li>
+            <li class="page-item"><a href="#" class="page-link">ELIMINAR HABITACIÓN</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="panel border bd-red win-shadow" data-role="panel">
+            <h3>¿Esta Seguro de Eliminar el Registro?</h3>
+            <dl>
+                <dt>ROWID</dt>
+                <dd>@Html.DisplayFor(x => x.HabitacionId)</dd>
+                <dt>NUMERO DE PERSONAS</dt>
+                <dd>@Html.DisplayFor(x => x.NumeroPersonas)</dd>
+                <dt>DESCRIPCION</dt>
+                <dd>@Html.DisplayFor(x => x.Descripcion)</dd>
+                <dt>PRECIO POR NOCHE</dt>
+                <dd>@Html.DisplayFor(x => x.PrecioNoche)</dd>
+                <dt>DISPONIBLE</dt>
+                <dd>
+                    @if (Model.Disponible)
+                    {
+                        <span class="label fg-green text-bold"><span class="mif-checkmark icon"></span> Disponible</span>
+                    }
+                    else
+                    {
+                        <span class="label fg-red text-bold"><span class="mif-checkmark icon"></span> No Disponible</span>
+                    }
+                </dd>
+                <dt>NUMERO DE HABITACIONES</dt>
+                <dd>@Html.DisplayFor(x => x.NumeroHabitaciones)</dd>
+                <dt>NUMERO DE HABITACIONES DISPONIBLES</dt>
+                <dd>@Html.DisplayFor(x => x.HabitacionesDisponibles)</dd>
+                <dt>SERVICIOS DE HABITACION</dt>
+                <dd>
+                    <ul class="unstyled-list">
+                        @foreach(var servicio in Model.ServiciosHabitacion.Split(','))
+                        {
+                            <li><span class="mif-star-full icon fg-yellow"></span> <span class="text-light">@servicio</span></li>
+                        }
+                    </ul>
+                </dd>
+                <dt>TIPO DE HABITACION</dt>
+                <dd>@Html.DisplayFor(x => x.TipoHabitacion.Nombre)</dd>
+            </dl>
+        </div>
+        @using (Html.BeginForm("DeleteHabitacionPost", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.HiddenFor(x => x.HabitacionId)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button alert"><span class="mif-bin icon"></span> ELIMINAR</button>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="image-container text-center">
+            <img src="~/Uploads/@Model.ImageUrl" class="w-50 h-50" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+﻿@model CaligulasHotel.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Registrarse";
+}
+<div class="grid">
+    <div class="row">
+        <div class="cell-12 mt-4">
+            <h2 class="display2 text-upper">@ViewBag.Title</h2>
+            <hr class="bd-blue bd-blue" />
+        </div>
+        <div class="cell-12">
+            <div class="bg-cyan fg-white p-4" data-role="panel">
+                <div class="text-medium text-center text-upper">Registrate y disfruta de las mejores aventuras que solo puedes encontrar en nuestras instalaciones, obtiene los mejores descuentos</div>
+                <div class="" data-role="countdown" data-hours="120"></div>
+                <div class="text-center text-medium w-100 text-upper">Apresurate las vacaciones de tus sueños se van!!</div>
+            </div>
+        </div>
+        <div class="cell-md-6 cell-sm-12 mt-3">
+            @Html.ValidationSummary(true, "", new { @class = "bg-red fg-white p-5 mb-5" })
+            <div class="bd-gray drop-shadow p-3" data-role="panel">
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Nombre)
+                        @Html.TextBoxFor(x => x.Nombre)
+                        @Html.ValidationMessageFor(x => x.Nombre, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Apellidos)
+                        @Html.TextBoxFor(x => x.Apellidos)
+                        @Html.ValidationMessageFor(x => x.Apellidos, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Telefono)
+                        @Html.TextBoxFor(x => x.Telefono)
+                        @Html.ValidationMessageFor(x => x.Telefono, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Email)
+                        @Html.TextBoxFor(x => x.Email)
+                        @Html.ValidationMessageFor(x => x.Email, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.FechaNacimiento)
+                        @Html.TextBoxFor(x => x.FechaNacimiento, new { @data_role = "calendarpicker" })
+                        @Html.ValidationMessageFor(x => x.FechaNacimiento, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Direccion)
+                        @Html.TextAreaFor(x => x.Direccion, new { @data_role = "textarea" })
+                        @Html.ValidationMessageFor(x => x.Direccion)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Password)
+                        @Html.PasswordFor(x => x.Password, new { @data_role = "input" })
+                        @Html.ValidationMessageFor(x => x.Password, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ConfirmPassword)
+                        @Html.PasswordFor(x => x.ConfirmPassword, new { @data_role = "input" })
+                        @Html.ValidationMessageFor(x => x.ConfirmPassword, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group mt-4">
+                        <button type="submit" class="button primary">GUARDAR</button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="cell-md-6 cell-sm-12 mt-3 win-shadow">
+            <h2 class="text-center text-upper">Caligula's Hotel</h2>
+            <div class="" data-role="cube"></div>
+            <h2 class="text-center text-upper">Hotel Casino & Spa</h2>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

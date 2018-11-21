@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    <li>
+        <a href="#" class="dropdown-toggle">@User.Identity.Name</a>
+        <ul class="d-menu" data-role="dropdown">
+            <li>@Html.ActionLink("MI CUENTA", "Account", "Home", new { }, new { })</li>
+            <li>@Html.ActionLink("CARRITO COMPRAS", "Index", "Cart", new { }, new { })</li>
+            @if (User.IsInRole("Administrador"))
+            {
+                <li>@Html.ActionLink("PANEL DE ADMINISTRACIÓN", "Index", "Admin", new { }, new { })</li>
+            }
+            <li>
+                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <a href="javascript:document.getElementById('logoutForm').submit()">CERRAR SESIÓN</a>
+                }
+            </li>
+        </ul>
+    </li>
+}
+else
+{
+    <li>@Html.ActionLink("Iniciar Sesión", "Login", "Account", new { }, new { })</li>
+    <li>@Html.ActionLink("Registrarse", "Register", "Account", new { }, new { })</li>
+}

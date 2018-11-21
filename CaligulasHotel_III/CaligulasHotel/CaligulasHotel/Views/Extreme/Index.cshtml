@@ -1,0 +1,42 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.VehiculoEntity>
+@{
+    ViewBag.Title = "Team Extreme";
+}
+
+<div class="row">
+    <div class="cell-12">
+        <h2 class="display2 text-light text-upper mt-4">@ViewBag.Title</h2>
+    </div>
+    @foreach (var vehiculo in Model)
+    {
+        <div class="cell-md-6 cell-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar">
+                        <span class="mif-hotel icon mif-4x"></span>
+                    </div>
+                    <div class="name sub-header text-upper text-light">@vehiculo.Nombre</div>
+                    <div class="date">-</div>
+                </div>
+                <div class="card-content">
+                    <div class="image-container">
+                        <img src="~/Uploads/@vehiculo.ImageUrl" class="w-100 h-75" />
+                    </div>
+                </div>
+                <div class="card-content p-2">
+                    @vehiculo.Matricula
+                </div>
+                <div class="card-footer">
+                    @if (Request.IsAuthenticated)
+                    {
+                        @Html.ActionLink("DETALLES", "Detalle", "Extreme", new { id = vehiculo.VehiculoId }, new { @class = "button small success" })
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Login","Account",new { returnUrl = HttpContext.Current.Request.Url.AbsolutePath })" class="button small"><span class="mif-vpn-lock"></span> INICIAR SESIÓN</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

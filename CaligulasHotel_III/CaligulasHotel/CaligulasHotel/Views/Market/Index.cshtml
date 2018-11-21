@@ -1,0 +1,53 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.CategoriaEntity>
+
+@{
+    ViewBag.Title = "Artículos";
+}
+
+
+
+<div class="row">
+    <div class="cell-12">
+        <h2 class="display2 text-light text-upper mt-4">@ViewBag.Title</h2>
+    </div>
+    @foreach (var categoria in Model)
+    {
+        foreach (var articulo in categoria.Articulos)
+        {
+            <div class="cell-md-4" data-parent="@categoria.Nombre">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar">
+                            <span class="mif-gift icon mif-3x"></span>
+                        </div>
+                        <div class="name text-upper">@articulo.Nombre</div>
+                        <div class="date">-</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="~/Uploads/@articulo.ImageUrl" class="w-100 h-75" />
+                        </div>
+                    </div>
+                    <div class="card-content p-2">
+                        @if (Request.IsAuthenticated)
+                        {
+                            <div class="text-light fg-green header"><span class="mif-dollar2"></span> @articulo.PrecioUnitario</div>
+                        }
+                        else
+                        {
+                            <div class="p-2 bg-red fg-white text-upper">
+                                <strong>inicie sesión para ver disponibilidad y precio</strong> <a href="@Url.Action("Login","Account",new { returnUrl=HttpContext.Current.Request.Url.AbsolutePath})" class="fg-white">[iniciar sesión]</a>
+                            </div>
+                        }
+                    </div>
+                    <div class="card-footer">
+                        @if (Request.IsAuthenticated)
+                        {
+                            @Html.ActionLink("DETALLES", "Detalle", "Market", new { id = articulo.ArticuloId }, new { @class = "button small success" })
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

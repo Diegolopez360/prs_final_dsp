@@ -1,0 +1,97 @@
+﻿@model CaligulasHotel.Models.ViewModel.HabitacionViewModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Crear Habitación";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Habitacion","Admin",new { })" class="page-link">HABITACIONES</a></li>
+            <li class="page-item"><a href="#" class="page-link">NUEVA HABITACIÓN</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        @using (Html.BeginForm("CreateHabitacion", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(x => x.HabitacionId)
+            <ul data-role="tabs" data-expand="true">
+                <li class="text-small p-3"><a href="#_data_habitacion"></a>DETALLES DE HABITACION</li>
+                <li class="text-small p-3"><a href="#_inventory_habitacion"></a>INVENTARIO DE HABITACION</li>
+            </ul>
+            <div class="border bd-default no-border-top p-3">
+                <div id="_data_habitacion">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Nombre)
+                        @Html.TextBoxFor(x => x.Nombre)
+                        @Html.ValidationMessageFor(x => x.Nombre, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.NumeroPersonas)
+                        @Html.TextBoxFor(x => x.NumeroPersonas)
+                        @Html.ValidationMessageFor(x => x.NumeroPersonas, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.File)
+                        @Html.TextBoxFor(x => x.File, new { @data_role = "file", @type = "file" })
+                        @Html.ValidationMessageFor(x => x.File, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.TipoHabitacion)
+                        @Html.DropDownListFor(x => x.TipoHabitacion, new SelectList(ViewBag.Cmbtipohabitacion, "TipoHabitacionId", "Nombre"), new { @data_role = "select" })
+                        @Html.ValidationMessageFor(x => x.TipoHabitacion, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Descripcion)
+                        @Html.TextAreaFor(x => x.Descripcion, new { @data_role = "textarea" })
+                        @Html.ValidationMessageFor(x => x.Descripcion, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.PrecioNoche)
+                        @Html.TextBoxFor(x => x.PrecioNoche)
+                        @Html.ValidationMessageFor(x => x.PrecioNoche, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.CheckBoxFor(x => x.Disponible, new { @data_role = "checkbox" })
+                        @Html.LabelFor(x => x.Disponible)
+                        @Html.ValidationMessageFor(x => x.Disponible, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+                <div id="_inventory_habitacion">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.NumeroHabitaciones)
+                        @Html.TextBoxFor(x => x.NumeroHabitaciones)
+                        @Html.ValidationMessageFor(x => x.NumeroHabitaciones, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.HabitacionesDisponibles)
+                        @Html.TextBoxFor(x => x.HabitacionesDisponibles)
+                        @Html.ValidationMessageFor(x => x.HabitacionesDisponibles, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ServiciosHabitacion)
+                        @Html.TextBoxFor(x => x.ServiciosHabitacion, new { @data_role = "taginput", @data_random_color = "true" })
+                        <small class="text-muted">Presiona la tecla <kbd>,</kbd> para agregar nuevos servicios</small>
+                        @Html.ValidationMessageFor(x => x.ServiciosHabitacion, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group mt-4">
+                <button type="submit" class="button primary"><span class="mif-floppy-disk"></span> GUARDAR</button>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="image-container text-center" id="dataImageUpload"></div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/render_file_from_input.js"></script>
+}

@@ -1,0 +1,114 @@
+﻿@model CaligulasHotel.Models.ViewModel.VehiculoViewModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Crear Vehículo";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+<div class="d-block mb-5 text-right">
+    <a href="@Url.Action("TipoVehiculo","Admin",new { })" class="button success drop-shadow"><span class="mif-plus icon"></span> VER TIPOS DE VEHICULOS</a>
+</div>
+<div class="row">
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Vehiculo","Admin",new { })" class="page-link">VEHÍCULOS</a></li>
+            <li class="page-item"><a href="#" class="page-link">CREAR VEHÍCULO</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        @using (Html.BeginForm("CreateVehiculo", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <ul data-role="tabs" data-expand="true">
+                <li class="text-small p-3"><a href="#_data_vehiculo"></a>INFORMACIÓN VEHÍCULO</li>
+                <li class="text-small p-3"><a href="#_aranceles_vehiculo"></a>ARANCELES VEHÍCULO</li>
+            </ul>
+            <div class="border bd-default no-border-top p-3">
+                <div id="_data_vehiculo">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Matricula)
+                        @Html.TextBoxFor(x => x.Matricula)
+                        @Html.ValidationMessageFor(x => x.Matricula, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.File)
+                        @Html.TextBoxFor(x => x.File, new { @type = "file", @data_role = "file" })
+                        @Html.ValidationMessageFor(x => x.File, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.TipoVehiculo)
+                        @Html.DropDownListFor(x => x.TipoVehiculo, new SelectList(ViewBag.CmbTipoVehiculo, "TipoVehiculoId", "Nombre"), new { @class = "", @data_role = "select" })
+                        @Html.ValidationMessageFor(x => x.TipoVehiculo, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Nombre)
+                        @Html.TextBoxFor(x => x.Nombre)
+                        @Html.ValidationMessageFor(x => x.Nombre, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Descripcion)
+                        @Html.TextAreaFor(x => x.Descripcion, new { @data_role = "textarea" })
+                        @Html.ValidationMessageFor(x => x.Descripcion, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.NumeroPersonas)
+                        @Html.TextBoxFor(x => x.NumeroPersonas)
+                        @Html.ValidationMessageFor(x => x.NumeroPersonas, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.FechaFabricacion)
+                        @Html.TextBoxFor(x => x.FechaFabricacion, new { @data_role = "calendarpicker" })
+                        @Html.ValidationMessageFor(x => x.FechaFabricacion, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+                <div id="_aranceles_vehiculo">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.CostoHora)
+                        @Html.TextBoxFor(x => x.CostoHora)
+                        @Html.ValidationMessageFor(x => x.CostoHora, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.MaximoHoras)
+                        @Html.TextBoxFor(x => x.MaximoHoras)
+                        @Html.ValidationMessageFor(x => x.MaximoHoras, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.MinimoHoras)
+                        @Html.TextBoxFor(x => x.MinimoHoras)
+                        @Html.ValidationMessageFor(x => x.MinimoHoras, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.MaximoMinutos)
+                        @Html.TextBoxFor(x => x.MaximoMinutos)
+                        @Html.ValidationMessageFor(x => x.MaximoMinutos, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.MinimoMinutos)
+                        @Html.TextBoxFor(x => x.MinimoMinutos)
+                        @Html.ValidationMessageFor(x => x.MinimoMinutos, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.CheckBoxFor(x => x.Habilitado, new { @data_role = "checkbox" })
+                        @Html.LabelFor(x => x.Habilitado)
+                        @Html.ValidationMessageFor(x => x.Habilitado, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-5">
+                <button type="submit" class="button primary"><span class="mif-floppy-disk"></span> GUARDAR</button>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="image-container text-center" id="dataImageUpload"></div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/render_file_from_input.js"></script>
+}
+
+

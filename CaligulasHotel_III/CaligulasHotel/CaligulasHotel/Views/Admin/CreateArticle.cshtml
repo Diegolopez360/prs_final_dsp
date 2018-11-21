@@ -1,0 +1,99 @@
+﻿@model CaligulasHotel.Models.ViewModel.ArticuloViewModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Nuevo Artículo";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+<div class="d-block mb-5 text-right">
+    <a href="@Url.Action("Categoria","Admin",new { })" class="button success drop-shadow"><span class="mif-plus icon"></span> VER CATEGORÍAS</a>
+    <a href="@Url.Action("Marca","Admin",new { })" class="button success drop-shadow"><span class="mif-plus icon"></span> VER MARCAS</a>
+</div>
+<div class="row">
+
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Articulo","Admin",new { })" class="page-link">ARTÍCULOS</a></li>
+            <li class="page-item"><a href="#" class="page-link">NUEVO ARTÍCULO</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        @using (Html.BeginForm("CreateArticle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <ul data-role="tabs" data-expand="true">
+                <li class="text-small p-3"><a href="#_data_article"></a>DETALLES DE ARTÍCULO</li>
+                <li class="text-small p-3"><a href="#_aranceles_article"></a>INVENTARIO DE ARTÍCULO</li>
+            </ul>
+            <div class="border bd-default no-border-top p-3">
+                <div id="_data_article">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.SKU)
+                        @Html.TextBoxFor(x => x.SKU)
+                        @Html.ValidationMessageFor(x => x.SKU, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.File)
+                        @Html.TextBoxFor(x => x.File, new { @data_role = "file", @type = "file" })
+                        @Html.ValidationMessageFor(x => x.File, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Marca)
+                        @Html.DropDownListFor(x => x.Marca, new SelectList(ViewBag.Cmbmarcas, "MarcaId", "Nombre"), new { @data_role = "select" })
+                        @Html.ValidationMessageFor(x => x.Marca, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Categoria)
+                        @Html.DropDownListFor(x => x.Categoria, new SelectList(ViewBag.Cmbcategorias, "CategoriaId", "Nombre"), new { @data_role = "select" })
+                        @Html.ValidationMessageFor(x => x.Categoria, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Nombre)
+                        @Html.TextBoxFor(x => x.Nombre)
+                        @Html.ValidationMessageFor(x => x.Nombre, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Descripcion)
+                        @Html.TextAreaFor(x => x.Descripcion, new { @data_role = "textarea" })
+                        @Html.ValidationMessageFor(x => x.Descripcion, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+                <div id="_aranceles_article">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.PrecioUnitario)
+                        @Html.TextBoxFor(x => x.PrecioUnitario)
+                        @Html.ValidationMessageFor(x => x.PrecioUnitario, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.PrecioCompra)
+                        @Html.TextBoxFor(x => x.PrecioCompra)
+                        @Html.ValidationMessageFor(x => x.PrecioCompra, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Stock)
+                        @Html.TextBoxFor(x => x.Stock)
+                        @Html.ValidationMessageFor(x => x.Stock, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.UnidadesCompradas)
+                        @Html.TextBoxFor(x => x.UnidadesCompradas)
+                        @Html.ValidationMessageFor(x => x.UnidadesCompradas, null, new { @class = "fg-red" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <button type="submit" class="button primary"><span class="mif-floppy-disk"></span> GUARDAR</button>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="image-container text-center" id="dataImageUpload"></div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/render_file_from_input.js"></script>
+}

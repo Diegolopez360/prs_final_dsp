@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Caligula's Hotel</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body class="h-100 mt-12">
+    <div data-role="appbar" class="app-bar bg-cobalt fg-white" data-expand-point="md">
+        @Html.ActionLink("Caligula's Hotel", "Index", "Home", new { }, new { @class = "brand no-hover" })
+        <ul class="app-bar-menu">
+            <li>@Html.ActionLink("HABITACIONES", "Index", "Habitacion", new { }, new { })</li>
+            <li>@Html.ActionLink("MARKET", "Index", "Market", new { }, new { })</li>
+            <li>@Html.ActionLink("ZONA XTREME", "Index", "Extreme", new { }, new { })</li>
+            <li>@Html.ActionLink("EVENTOS", "Evento", "Home", new { }, new { })</li>
+            <li>@Html.ActionLink("CONTÁCTANOS", "Contact", "Home", new { }, new { })</li>
+        </ul>
+        <ul class="app-bar-menu ml-auto">
+            @Html.Partial("_LoginPartial")
+        </ul>
+    </div>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/metrosrc")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

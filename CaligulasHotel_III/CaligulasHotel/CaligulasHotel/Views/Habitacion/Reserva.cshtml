@@ -1,0 +1,54 @@
+﻿@model CaligulasHotel.Models.ViewModel.ReservaHabitacionViewModel
+
+@{
+    ViewBag.Title = "Reserva Habitación";
+}
+
+
+<div class="row">
+    <div class="cell-12 mt-4">
+        <h2 class="text-upper display2 text-light">@ViewBag.Title</h2>
+    </div>
+
+    <div class="cell-md-6">
+        @using (Html.BeginForm("Reserva", "Habitacion", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(x => x.HabitacionId)
+            <div class="form-group">
+                @Html.LabelFor(x => x.FechaContrato)
+                @Html.TextBoxFor(x => x.FechaContrato, "{0:dd/MM/yyyy}", new { @data_role = "calendarpicker", @data_calendar_wide = "true", @data_input_format = "%d/%m/%y" })
+                @Html.ValidationMessageFor(x => x.FechaContrato, null, new { @class = "fg-red" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.FechaVencimiento)
+                @Html.TextBoxFor(x => x.FechaVencimiento, "{0:dd/MM/yyyy}", new { @data_role = "calendarpicker", @data_calendar_wide = "true", @data_input_format = "%d/%m/%y" })
+                @Html.ValidationMessageFor(x => x.FechaVencimiento, null, new { @class = "fg-red" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.CardNumber)
+                @Html.TextBoxFor(x => x.CardNumber)
+                @Html.ValidationMessageFor(x => x.CardNumber, null, new { @class = "fg-red" })
+            </div>
+            <div class="form-group">
+                @Html.CheckBoxFor(x => x.RememberCardNumber, new { @data_role = "checkbox" })
+                @Html.LabelFor(x => x.RememberCardNumber)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button small info">ACEPTAR</button> <span class="fg-green v-center"><span class="mif-lock"></span> Secured Payment</span>
+            </div>
+        }
+    </div>
+    <div class="cell-md-6">
+        <div class="img-container text-center thumbnail image-overlay">
+            <img src="~/Uploads/@Model.ImageUrl" class="w-50" />
+            <div class="op-amber image-overlay">
+                <h1 class="display2 text-upper">@Html.DisplayFor(x => x.NombreHabitacion)</h1>
+                <h2 class="display1 text-upper"><span class="mif-dollar2"></span>@Html.DisplayFor(x => x.PrecioHabitacion) por Noche</h2>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

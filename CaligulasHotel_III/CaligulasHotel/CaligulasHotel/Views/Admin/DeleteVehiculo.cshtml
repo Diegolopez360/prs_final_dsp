@@ -1,0 +1,48 @@
+﻿@model CaligulasHotel.Models.ViewModel.VehiculoViewModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Eliminar Vehículo";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="cell-12 px-0">
+        <ul class="breadcrumbs">
+            <li class="page-item"><a href="@Url.Action("Vehiculo","Admin",new { })" class="page-link">VEHÍCULOS</a></li>
+            <li class="page-item"><a href="#" class="page-link">ELIMINAR VEHÍCULO</a></li>
+        </ul>
+    </div>
+    <div class="cell-md-6 cell-sm-12">
+        <div class="panel border bd-red win-shadow" data-role="panel">
+            <h3>¿Esta Seguro de Eliminar el Registro?</h3>
+            <dl>
+                <dt>ROWID</dt>
+                <dd>@Html.DisplayFor(x => x.VehiculoId)</dd>
+                <dt>MATRICULA</dt>
+                <dd>@Html.DisplayFor(x => x.Matricula)</dd>
+                <dt>NOMBRE</dt>
+                <dd>@Html.DisplayFor(x => x.Nombre)</dd>
+                <dt>DESCRIPCION</dt>
+                <dd>@Html.DisplayFor(x => x.Descripcion)</dd>
+                <dt>NUMERO DE PERSONAS</dt>
+                <dd>@Html.DisplayFor(x => x.NumeroPersonas)</dd>
+                <dt>TIPO DE VEHICULO</dt>
+                <dd>@Html.DisplayFor(x => x.TipoVehiculo)</dd>
+                <dt>FECHA FABRICACION</dt>
+                <dd>@Html.DisplayFor(x => x.FechaFabricacion)</dd>
+            </dl>
+        </div>
+        @using (Html.BeginForm("DeleteVehiculoPost", "Admin", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.HiddenFor(x => x.VehiculoId)
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button alert"><span class="mif-bin icon"></span> ELIMINAR</button>
+            </div>
+        }
+    </div>
+</div>

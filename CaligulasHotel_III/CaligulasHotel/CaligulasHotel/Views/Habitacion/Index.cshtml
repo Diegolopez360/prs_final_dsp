@@ -1,0 +1,42 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.HabitacionEntity>
+@{
+    ViewBag.Title = "Habitaciones";
+}
+
+
+
+<div class="row">
+    <div class="cell-12">
+        <h2 class="display2 text-light text-upper mt-4">@ViewBag.Title</h2>
+    </div>
+    @foreach (var habitacion in Model)
+    {
+        <div class="cell-md-6 cell-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar">
+                        <span class="mif-hotel icon mif-4x"></span>
+                    </div>
+                    <div class="name sub-header text-upper text-light">@habitacion.Nombre</div>
+                    <div class="date">-</div>
+                </div>
+                <div class="card-content">
+                    <div class="image-container">
+                        <img src="~/Uploads/@habitacion.ImageUrl" class="w-100 h-75" />
+                    </div>
+                </div>
+                <div class="card-content p-2">
+                    <ul class="unstyled-list">
+                        <li><span class="mif-checkmark fg-green"></span> Numero de Personas: @habitacion.NumeroPersonas</li>
+                    </ul>
+                    <div class="text-left">
+                        <h2 class="text-light fg-brandColor2"><span class="mif-dollar2"></span> @habitacion.PrecioNoche</h2>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    @Html.ActionLink("DETALLES", "Detalle", "Habitacion", new { id = habitacion.HabitacionId }, new { @class = "button small success" })
+                </div>
+            </div>
+        </div>
+    }
+</div>

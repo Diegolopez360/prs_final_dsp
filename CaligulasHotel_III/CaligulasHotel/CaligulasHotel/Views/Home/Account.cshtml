@@ -1,0 +1,84 @@
+﻿@model CaligulasHotel.Models.ViewModel.AccountViewModel
+
+@{
+    ViewBag.Title = "Mi Cuenta";
+}
+
+<div class="row">
+    <div class="cell-12">
+        <h1 class="text-upper text-light display2 mt-4">@ViewBag.Title</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper text-light bg-steel fg-white">últimos productos agregados al carrito de compras</li>
+            @foreach (var shoppingcart in Model.LineaShoppings)
+            {
+                <li class="item">
+                    <img class="avatar" src="~/Uploads/@shoppingcart.Articulo.ImageUrl" />
+                    <div class="label text-upper">@shoppingcart.Articulo.Nombre</div>
+                    <div class="second-label">SKU# @shoppingcart.Articulo.SKU</div>
+                    <div class="second-label text-upper">número productos# @shoppingcart.NumeroArticulos</div>
+                    <div class="label fg-green"><span class="mif-dollar2 icon"></span> @shoppingcart.TotalPagar</div>
+                    <div class="second-label">@string.Format("{0:dd/MM/yyyy}", shoppingcart.FechaAgregado)</div>
+                </li>
+            }
+            @if (Model.LineaShoppings.Where(x => x.Cancelado == false).ToList().Count > 0)
+            {
+                <li>
+                    <a href="@Url.Action("Index","Cart",new { })" class="button small text-upper"><span class="mif-cart"></span> ir al carrito de compras</a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper bg-steel text-light fg-white">últimas habitaciones adquiridas</li>
+            @foreach (var habitacion in Model.Habitaciones)
+            {
+                <li class="item">
+                    <img class="avatar" src="~/Uploads/@habitacion.Habitacion.ImageUrl" />
+                    <div class="label text-upper">@habitacion.Habitacion.Nombre</div>
+                    <div class="second-label text-upper">@string.Format("fecha entrada# {0:dd/MM/yyyy}; fecha salida# {1:dd/MM/yyyy}", habitacion.FechaContrato, habitacion.FechaVencimiento)</div>
+                    <div class="second-label text-upper">noches canceladas# @habitacion.NumeroNoches</div>
+                    <div class="label fg-green"><span class="mif-dollar2 icon"></span> @habitacion.TotalPago</div>
+                    <div class="second-label">@string.Format("{0:dd/MM/yyyy}", habitacion.FechaContrato)</div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper bg-steel text-light fg-white">últimos vehículos rentados</li>
+            @foreach (var renta in Model.RentaVehiculos)
+            {
+                <li class="item">
+                    <img class="avatar" src="~/Uploads/@renta.RentaVehiculo.Vehiculo.ImageUrl" />
+                    <div class="label text-upper">@renta.RentaVehiculo.Vehiculo.Nombre</div>
+                    <div class="second-label text-upper">total horas# @renta.NumeroHoras</div>
+                    <div class="fg-green label"><span class="mif-dollar2"></span> @renta.TotalPago</div>
+                    <div class="second-label">@renta.FechaRenta</div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper bg-steel text-light fg-white">últimas transacciones realizadas</li>
+            @foreach (var factura in Model.Facturas)
+            {
+                <li class="item">
+                    <div class="label fg-cobalt text-upper">factura# @factura.FacturaId</div>
+                    <div class="second-label">tarjeta# @factura.NumeroTarjeta <span class="mif-visa icon"></span> <span class="mif-mastercard icon"></span> <span class="mif-discover icon"></span></div>
+                    <div class="second-label">cantidad arículos# @factura.NumeroArticulos</div>
+                    <div class="label fg-green"><span class="mif-dollar2"></span>@factura.TotalPagar</div>
+                    <div class="second-label">@factura.FechaCreacion</div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

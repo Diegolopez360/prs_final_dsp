@@ -1,0 +1,50 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.LineaShoppingCartEntity>
+
+@{
+    ViewBag.Title = "Carrito de Compras";
+}
+
+<div class="row">
+    <div class="cell-12">
+        <h1 class="text-upper text-light display2 mt-4"><span class="mif-cart icon"></span> @ViewBag.Title</h1>
+    </div>
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title bg-steel fg-white text-upper">items agregados al carrito de compras</li>
+            @foreach (var shoppingcart in Model)
+            {
+                <li class="item">
+                    <img class="avatar" src="~/Uploads/@shoppingcart.Articulo.ImageUrl" />
+                    <div class="label text-upper">@shoppingcart.Articulo.Nombre</div>
+                    <div class="second-label">SKU# @shoppingcart.Articulo.SKU</div>
+                    <div class="second-label text-upper">número productos# @shoppingcart.NumeroArticulos</div>
+                    <div class="label fg-green"><span class="mif-dollar2 icon"></span> @shoppingcart.TotalPagar</div>
+                    <div class="second-label">@string.Format("{0:dd/MM/yyyy}", shoppingcart.FechaAgregado)</div>
+                    <div class="label">
+                        @using (Html.BeginForm("Delete", "Cart", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("ItemId", shoppingcart.LineaId)
+                            <button type="submit" class="button small alert place-right"><span class="mif-bin icon"></span></button>
+                        }
+                    </div>
+                </li>
+            }
+        </ul>
+        <hr />
+        <div class="fg-steel header text-light text-upper my-0">número de items# @Model.Sum(x => x.NumeroArticulos)</div>
+        <div class="fg-green display1 text-light text-upper my-0">total a pagar: <span class="mif-dollar2 icon"></span><strong>@Model.Sum(x => x.TotalPagar)</strong></div>
+        <hr />
+        @if (Model.Count > 0)
+        {
+            using (Html.BeginForm("Checkout", "Cart", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.Hidden("CartId", Model.FirstOrDefault().ShoppingCart.CartId)
+                <div class="form-group">
+                    <button type="submit" class="button small success">REALIZAR PAGO</button> <span class="fg-green"><span class="mif-lock icon"></span> Secure Payment</span>
+                </div>
+            }
+        }
+    </div>
+</div>

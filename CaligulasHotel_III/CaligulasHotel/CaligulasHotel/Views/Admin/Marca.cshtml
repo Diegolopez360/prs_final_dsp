@@ -1,0 +1,49 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.MarcaEntity>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Marcas";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+@if (ViewBag.Message != null)
+{
+    <div class="row my-5">
+        <div class="cell-12">
+            <div class="bg-green fg-white text-upper win-shadow" data-role="panel">@ViewBag.Message</div>
+        </div>
+    </div>
+}
+<div class="d-block mb-5 text-right">
+    <a href="@Url.Action("CreateBrand","Admin",new { })" class="button success drop-shadow"><span class="mif-plus icon"></span> AGREGAR</a>
+</div>
+<div class="row my-5">
+    <div class="cell-md-8 search-wrapper"></div>
+    <div class="cell-md-4 rows-wrapper"></div>
+</div>
+<div class="row">
+    <div class="cell-12">
+        <table class="table table-border striped" data-role="table" data-table-info-title="Mostrando $1 de $2 registros" data-search-wrapper=".search-wrapper" data-rows-wrapper=".rows-wrapper">
+            <thead>
+                <tr>
+                    <th>ROWID</th>
+                    <th data-sortable="true">NOMBRE</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var categoria in Model)
+                {
+                    <tr>
+                        <td>@categoria.MarcaId</td>
+                        <td>@categoria.Nombre</td>
+                        <td>
+                            <a href="@Url.Action("EditBrand","Admin",new { id=categoria.MarcaId})" class="button small success"><span class="mif-pencil icon"></span></a>
+                            <a href="@Url.Action("DeleteBrand","Admin",new { id=categoria.MarcaId})" class="button small alert"><span class="mif-bin icon"></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

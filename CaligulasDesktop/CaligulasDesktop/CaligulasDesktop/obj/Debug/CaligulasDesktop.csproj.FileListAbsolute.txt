@@ -1,0 +1,26 @@
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.exe.config
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.exe
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.pdb
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csprojAssemblyReference.cache
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Form1.resources
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Properties.Resources.resources
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csproj.GenerateResource.cache
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csproj.CoreCompileInputs.cache
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.exe
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.pdb
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Dashboard.resources
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.ArticuloForm.resources
+C:\Users\AGonzalez\source\repos\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.CreateArticuloForm.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.exe.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\bin\Debug\CaligulasDesktop.pdb
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csprojAssemblyReference.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.ArticuloForm.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.CreateArticuloForm.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Dashboard.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Form1.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.Properties.Resources.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csproj.GenerateResource.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasDesktop\CaligulasDesktop\CaligulasDesktop\obj\Debug\CaligulasDesktop.pdb

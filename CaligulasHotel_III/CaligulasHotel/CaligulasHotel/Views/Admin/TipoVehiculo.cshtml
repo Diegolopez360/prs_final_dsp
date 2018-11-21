@@ -1,0 +1,52 @@
+﻿@model ICollection<CaligulasHotel.Models.Entity.TipoVehiculoEntity>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Tipo Vehículos";
+}
+
+<h2 class="display2 text-light text-upper">@ViewBag.Title</h2>
+@if (ViewBag.Message != null)
+{
+    <div class="row my-5">
+        <div class="cell-12">
+            <div class="bg-green fg-white text-upper win-shadow" data-role="panel">@ViewBag.Message</div>
+        </div>
+    </div>
+}
+
+<div class="d-block mb-5 clear">
+    <a href="@Url.Action("Vehiculo","Admin",new { })" class="button success drop-shadow float-left"><span class="mif-arrow-left icon"></span> VEHÍCULOS</a>
+    <a href="@Url.Action("CreateTipoVehiculo","Admin",new { })" class="button success drop-shadow float-right"><span class="mif-plus icon"></span> AGREGAR</a>
+</div>
+
+<div class="row my-5">
+    <div class="cell-md-8 search-wrapper"></div>
+    <div class="cell-md-4 rows-wrapper"></div>
+</div>
+<div class="row">
+    <div class="cell-12">
+        <table class="table table-border striped" data-role="table" data-table-info-title="Mostrando $1 de $2 registros" data-search-wrapper=".search-wrapper" data-rows-wrapper=".rows-wrapper">
+            <thead>
+                <tr>
+                    <th>ROWID</th>
+                    <th data-sortable="true">NOMBRE</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tipovehiculo in Model)
+                {
+                    <tr>
+                        <td>@tipovehiculo.TipoVehiculoId</td>
+                        <td>@tipovehiculo.Nombre</td>
+                        <td>
+                            <a href="@Url.Action("EditTipoVehiculo","Admin",new { id=tipovehiculo.TipoVehiculoId})" class="button small success"><span class="mif-pencil icon"></span></a>
+                            <a href="@Url.Action("DeleteTipoVehiculo","Admin",new { id=tipovehiculo.TipoVehiculoId})" class="button small alert"><span class="mif-bin icon"></span></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

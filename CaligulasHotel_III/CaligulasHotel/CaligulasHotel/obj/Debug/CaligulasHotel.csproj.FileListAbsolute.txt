@@ -1,0 +1,284 @@
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\ApplicationInsights.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.dll.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.pdb
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.exe
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.exe.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.rsp
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.exe
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.exe.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.rsp
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.AppContext.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Console.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.Compression.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Net.Http.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Net.Sockets.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.ValueTuple.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XPath.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.exe
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.exe.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.rsp
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\VBCSCompiler.exe
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Antlr3.Runtime.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\EntityFramework.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\EntityFramework.SqlServer.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Web.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.ApplicationInsights.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Newtonsoft.Json.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Owin.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Helpers.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Mvc.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Optimization.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Razor.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Razor.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\WebGrease.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Web.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.ApplicationInsights.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Newtonsoft.Json.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Helpers.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Mvc.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Razor.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Razor.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\System.Web.Optimization.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Antlr3.Runtime.pdb
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\EntityFramework.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\EntityFramework.SqlServer.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Helpers.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Mvc.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Razor.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Optimization.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\EntityFramework.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.CoreCompileInputs.cache
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.CopyComplete
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.dll
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.pdb
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csprojAssemblyReference.cache
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.ReleaseDatabaseSchema.resources
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.GenerateResource.cache
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.LineaRentaActivoField.resources
+C:\Users\AGonzalez\source\repos\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.NumeroTarjetaFacturaEntity.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\ApplicationInsights.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.dll.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\CaligulasHotel.pdb
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.exe.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csc.rsp
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.exe.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\csi.rsp
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.AppContext.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Console.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.Compression.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Net.Http.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.ValueTuple.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.exe.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\vbc.rsp
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Antlr3.Runtime.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\EntityFramework.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\EntityFramework.SqlServer.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Web.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Newtonsoft.Json.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Owin.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Helpers.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Mvc.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Optimization.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Razor.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\WebGrease.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.Web.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Newtonsoft.Json.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Helpers.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Mvc.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Razor.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\System.Web.Optimization.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Antlr3.Runtime.pdb
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\EntityFramework.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\EntityFramework.SqlServer.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Razor.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\EntityFramework.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csprojAssemblyReference.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.ReleaseDatabaseSchema.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.LineaRentaActivoField.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.Migrations.NumeroTarjetaFacturaEntity.resources
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.GenerateResource.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.csproj.CopyComplete
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.dll
+C:\Users\Gabriela Pineda\Downloads\CaligulasHotel_III\CaligulasHotel\CaligulasHotel\obj\Debug\CaligulasHotel.pdb

@@ -1,0 +1,42 @@
+﻿@using CaligulasHotel.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Iniciar sesión";
+}
+
+<div class="grid">
+    <div class="row">
+        <div class="cell-md-4 cell-sm-12 offset-md-4 mt-10">
+            @Html.ValidationSummary(true,null,new { @class="fg-red"})
+            <div class="p-3 win-shadow mt-5 border" data-role="panel">
+                <div class="d-block">
+                    <span class="mif-vpn-lock place-right mif-6x"></span>
+                    <h2 class="text-light text-upper">@ViewBag.Title</h2>
+                </div>
+                <br class="bg-white" />
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <input name="returnUrl" type="hidden" value="@ViewBag.returnUrl" />
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Email)
+                        @Html.TextBoxFor(x => x.Email)
+                        @Html.ValidationMessageFor(x => x.Email, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Password)
+                        @Html.PasswordFor(x => x.Password)
+                        @Html.ValidationMessageFor(x => x.Password, null, new { @class = "fg-red" })
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button primary">INICIAR SESIÓN</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="mt-15"></div>
+<div class="row">
+    <div class="cell-12">
+        <div data-role="carousel" data-controls-on-mouse="true" data-cls-controls="fg-cobalt" data-height="21/9">
+            <div class="slide p-2 px-10">
+                <div class="row flex-align-center h-100">
+                    <div class="cell-md-6 text-center">
+                        <img src="~/Uploads/carousel_hotel_5.jpg" class="img-fluid" />
+                    </div>
+                    <div class="cell-md-6">
+                        <h1 class="text-light text-upper">Ven y conoce nuestras instalaciones</h1>
+                        <p class="text-muted mb-2">Contamos con una gran variedad de suites perfectas a tu estilo de vida</p>
+                        @Html.ActionLink("CONOCER MAS...", "", "", new { @class = "button primary" })
+                    </div>
+                </div>
+            </div>
+            <div class="slide p-2 px-10">
+                <div class="row flex-align-center h-100">
+                    <div class="cell-md-6 text-center">
+                        <img src="~/Uploads/carousel_hotel_1.jpg" class="img-fluid" />
+                    </div>
+                    <div class="cell-md-6">
+                        <h1 class="text-light text-upper">vive la emoción y se parte de nuestro team xtreme</h1>
+                        <p class="text-muted mb-2">En caligila's hotel contamos con pistas para deportes extremos diseñadas con el objetivo de vivir la adrenalina al máximo preparáte y disfruta junto a nuesto equipo de profesionales quienes te garantizan una aventura totalmente extrema</p>
+                        @Html.ActionLink("CONOCER MAS...", "", "", new { @class = "button primary" })
+                    </div>
+                </div>
+            </div>
+            <div class="slide p-2 px-10">
+                <div class="row flex-align-center h-100">
+                    <div class="cell-md-6 text-center">
+                        <img src="~/Uploads/carousel_hotel_3.jpg" class="img-fluid" />
+                    </div>
+                    <div class="cell-md-6">
+                        <h1 class="text-light text-upper">celebra uno de tus momentos más importantes de tu vida</h1>
+                        <p class="text-muted mb-2">En caligula's hotel nos tomamos muy enserio todos tus eventos para garantizarte que todo salga perfecto, poniendo a tu disposición el personal más capacitado que junto a ti organizarán el evento de tus sueños.</p>
+                        @Html.ActionLink("CONOCER MAS...", "", "", new { @class = "button primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

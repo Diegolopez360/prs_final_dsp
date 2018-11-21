@@ -1,0 +1,72 @@
+﻿@model CaligulasHotel.Models.ViewModel.LeaseViewModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Arrendamientos";
+}
+
+<div class="row">
+    <div class="cell-12">
+        <h2 class="display2 text-light text-upper mt-4">@ViewBag.Title</h2>
+    </div>
+    @if (ViewBag.Message != null)
+    {
+        <div class="row my-5">
+            <div class="cell-12">
+                <div class="bg-green fg-white text-upper win-shadow" data-role="panel">@ViewBag.Message</div>
+            </div>
+        </div>
+    }
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper bg-steel text-light fg-white">vehículos arrendados</li>
+            @foreach (var vehiculo in Model.RentaVehiculo)
+            {
+                <li class="item">
+                    <img class="avatar" src="~/Uploads/@vehiculo.RentaVehiculo.Vehiculo.ImageUrl" />
+                    <div class="label text-upper">@vehiculo.RentaVehiculo.Vehiculo.Nombre</div>
+                    <div class="second-label text-upper">inicio <span class="mif-calendar icon"></span> @vehiculo.FechaRenta - finaliza <span class="mif-calendar icon"></span> @vehiculo.FechaExpiracion</div>
+                    <div class="second-label text-upper">horas# @vehiculo.NumeroHoras</div>
+                    <div class="label">
+                        @using (Html.BeginForm("DisableLease", "Admin", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("Type", "Vehiculo")
+                            @Html.Hidden("Identifier", vehiculo.Id)
+                            <div class="form-group">
+                                <button type="submit" class="button small bd-orange fg-orange place-right" data-role="popover" data-popover-text="@vehiculo.RentaVehiculo.Vehiculo.Nombre" data-popover-position="left">RECIBIR</button>
+                            </div>
+                        }
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="cell-12">
+        <ul class="feed-list">
+            <li class="title text-upper bg-steel text-light fg-white">habitaciones arrendadas</li>
+            @foreach (var habitacion in Model.Habitaciones)
+            {
+                <li class="item">
+                    <img src="~/Uploads/@habitacion.Habitacion.ImageUrl" class="avatar" />
+                    <div class="label text-upper">@habitacion.Habitacion.Nombre</div>
+                    <span class="second-label text-upper">entrada <span class="mif-calendar icon"></span> @habitacion.FechaContrato.ToShortDateString() - salida <span class="mif-calendar icon"></span> @habitacion.FechaVencimiento.ToShortDateString()</span>
+                    <span class="second-label text-upper"><span class="mif-users icon"></span> @habitacion.User.FullName</span>
+                    <div class="label">
+                        @using (Html.BeginForm("DisableLease", "Admin", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("Type", "Habitacion")
+                            @Html.Hidden("Identifier", habitacion.Id)
+                            <div class="form-group">
+                                <button type="submit" class="button small bd-orange fg-orange place-right" data-role="popover" data-popover-text="@habitacion.Habitacion.Nombre" data-popover-position="left">RECIBIR</button>
+                            </div>
+                        }
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
